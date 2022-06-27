@@ -1,0 +1,111 @@
+/* 详情部分02 */
+.fotxiangq>ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.fotxq-box{
+    width: 200px;
+    align-items: center;
+    /* background-color: aqua; */
+    margin: 10px;
+    transition: all 0.5s;
+}
+.fotxq-box:hover{
+    transform: scale(1.2);
+}
+.fotxq-box>img{
+    width: 80px;
+    height: 80px;
+}
+
+.fotxq-box>p{
+    margin-top: 10px;
+    color: rgb(189, 186, 186);
+}
+
+/* 详情部分04 */
+.fofoxiangq{
+    margin-bottom: 100px;
+}
+.fofo-item h4{
+    margin: 10px;
+}
+.fofo-item>div{
+    width: 100%;
+}
+
+.fofo-item>div>img{
+    width: 100%;
+    height: 100%;
+}
+/* 教育 */
+.jy01,.jy03
+{
+    height: 350px;
+}
+.jyo2,.jy04{
+    height: 300px;
+}
+.jy05{
+    height: 350px;
+}
+.jy06{
+    height: 800px;
+}
+.jy07{
+    height: 900px;
+}
+/* 医疗 */
+.yl01,.yl02{
+    height: 500px;
+}
+.yl03{
+    height: 800px;
+}
+.yl04{
+    height: 550px;
+}
+.yl05{
+    height: 600px;
+}
+.yl06{
+    height: 700px;
+}
+/* 工具 */
+.gj01{
+    height: 1300px;
+}
+.gj02{
+    height: 2500px;
+}
+/* 宠物 */
+.cw01{
+    height: 1100px;
+}
+.cw02{
+    height: 450px;
+}
+.cw03{
+    height: 800px;
+}
+.cw04{
+    height: 1200px;
+}
+
+/*  */
+.line {
+    position: absolute;
+    cursor: default;
+}
+
+.lineS {
+    font-size: 1px;
+    opacity: 0;
+    border-radius: 2.5px;
+    position: absolute;
+    transition:1s;
+    position: absolute;
+    cursor: default;
+}

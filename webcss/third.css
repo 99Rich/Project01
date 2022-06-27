@@ -1,0 +1,87 @@
+/* 详情部分02 */
+.thtxiangq{
+    width: 100%;
+}
+.thtxiangq>img{
+    width: 100%;
+    height: 780px;
+}
+
+/* 详情部分03 */
+.thsxiangq>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.thsxiangq>ul>li{
+    width: 350px;
+    height: 200px;
+    
+    position: relative;
+    list-style:none;
+    margin: 20px 0;
+    display: inline-block;
+    perspective: 300px;
+}
+.thsxiangq>ul>li>.picBox>.show{
+    /* color: black;
+    background: -webkit-linear-gradient(left, #bfb5dd,  #fdefac,#bed5f5);
+    background: -o-linear-gradient(right, #bfb5dd,  #fdefac,#bed5f5);
+    background: -moz-linear-gradient(right,#bfb5dd,  #fdefac, #bed5f5);
+    background: linear-gradient(to right,#bfb5dd, #fdefac,  #bed5f5);  */
+    background: -webkit-linear-gradient(left, rgba(51, 235, 213) , rgb(27, 157, 226));
+    background: -o-linear-gradient(right, rgba(51, 235, 213) , rgb(27, 157, 226)); 
+    background: -moz-linear-gradient(right, rgba(51, 235, 213) , rgb(27, 157, 226)); 
+    background: linear-gradient(to right, rgba(51, 235, 213) , rgb(27, 157, 226));
+    color: white;
+}
+.hide>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 详情部分05 */
+/* 3D翻转 */
+div.flip-3d{
+    perspective: 1200px;
+    width: 500px;
+    margin: 50px 0;
+}
+div.flip-3d>figure{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+    font-size: 1.6rem;
+}
+div.flip-3d>figure>img{
+    width: 100%;
+    height: 900px;
+}
+div.flip-3d>figure>figcaption{
+    text-align: center;
+}
+div.flip-3d:hover figure{
+    transform: rotateY(.5turn);
+}
+div.flip-3d:hover figure figcaption{
+    opacity: 1;
+}
+div.flip-3d figure:after{
+    content: "";
+    display: block;
+    height: 8vw;
+    width: 100%;
+    transform: rotateX(90deg);
+    background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+@media screen and (max-width: 800px) {
+    div#flip-3d { perspective-origin: center top; }
+    div#flip-3d figure { 
+        float: none; 
+        width: 50%; 
+        margin: 0 auto; 
+        margin-bottom: 12vw; 
+    }
+    div.flip-3d figure figcaption{font-size: 0.8rem;}
+    div#flip-3d figure:last-child { display: none; }
+}

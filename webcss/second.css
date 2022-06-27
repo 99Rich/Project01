@@ -1,0 +1,85 @@
+
+/* 详情部分01 */
+
+
+/* 详情部分02 */
+
+.stxiangq>ul>li>.picBox>.show{
+    color: white;
+    background: -webkit-linear-gradient(left, rgba(51, 235, 213) , rgb(27, 157, 226)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(51, 235, 213) , rgb(27, 157, 226)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(51, 235, 213) , rgb(27, 157, 226)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(51, 235, 213) , rgb(27, 157, 226)); /* 标准的语法（必须放在最后） */
+}
+
+
+
+/* 详情部分03 */
+/* pubtitle.css 线球公用部分 */
+
+/* 详情部分04 */
+.sfxiangq>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.sfxiangq>ul>li>img{
+    width: 500px;
+    height: 300px;
+    margin: 50px 0 ;
+}
+
+.group>li{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.group>li>span{
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+/* 效果 */
+#grid{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#grid li{
+	margin: 50px 0;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+#grid li:hover {
+	z-index: 2;
+	-webkit-transform: scale(1.1) translateY(-40px);
+	-moz-transform: scale(1.1) translateY(-40px);
+	-ms-transform: scale(1.1) translateY(-40px);
+	transform: scale(1.1) translateY(-40px);
+	-webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+#grid li:nth-child(2n-1):hover {
+    -webkit-transform: scale(1.1) translate3d(0, -30px, 0) rotate(-2.5deg);
+    -moz-transform: scale(1.1) translateY(-30px) rotate(-2.5deg);
+    -ms-transform: scale(1.1) translateY(-30px) rotate(-2.5deg);
+    transform: scale(1.1) translateY(-30px) rotate(-2.5deg);
+}
+#grid li:nth-child(2n):hover {
+    -webkit-transform: scale(1.1) translate3d(0, -30px, 0) rotate(2.5deg);
+    -moz-transform: scale(1.1) translateY(-30px) rotate(2.5deg);
+    -ms-transform: scale(1.1) translateY(-30px) rotate(2.5deg);
+    transform: scale(1.1) translateY(-30px) rotate(2.5deg);
+}

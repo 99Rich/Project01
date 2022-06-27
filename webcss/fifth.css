@@ -1,0 +1,254 @@
+/* 代码雨 */
+.swiper>canvas{
+    width: 100%;
+    height: 100%;
+}
+.swiper>.font{
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* 详情部分01 */
+.fioxiangq{
+    width: 100%;
+    height: 700px;
+}
+.fioxiangq>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 详情部分02 */
+.fitxiangq{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 50px;
+}
+.fitxiangq-left{
+    width: 300px;
+    height: 350px;
+    /* background-color: aquamarine; */
+}
+.fitxiangq-right{
+    width: 600px;
+    height: 350px;
+}
+.question{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fitxiangq-right>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 详情部分03 */
+
+/* 小标题 */
+.small{
+    width: 75%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small>img{
+    width: 50px;
+    height: 40px;
+}
+
+/* 详情部分04 */
+#screen{
+    height: 500px;
+    /* background-color: #596a72; */
+}
+#screen img { 
+    position:absolute; 
+    width:0px; height:0px; 
+    border:none; -ms-interpolation-mode:nearest-neighbor; 
+    image-rendering: optimizeSpeed; 
+}
+
+#screen .wall { 
+    position:absolute; 
+    background:transparent; 
+    border-style:solid; 
+    border-width:0px; 
+    width:0px; height:0px; 
+    font-size:0px; 
+    z-index:1; }
+
+#screen .trans { 
+    position:absolute; 
+    left:-10000px; 
+    /* background:#FFF;  */
+    filter:alpha(opacity=20); 
+    opacity:0.2; 
+    font-size:1px; 
+    border:#000 solid 1px; 
+}
+
+#screen .txt { 
+    position:absolute; 
+}
+
+/* 详情部分05 */
+.fificols{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+fifi-itemcol{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;  
+}
+.fificont{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.fifi-front{
+    width: 600px;
+    margin-bottom: 50px;
+}
+.fifi-front,
+.fifi-back{
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), 
+    -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 400px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+  
+.fifi-front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: rgba(0, 0, 0, 0.578);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.fificont:hover .fifi-front,
+.fificont:hover .fifi-back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), 
+    -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+  
+.fifi-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.fifi-inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    font-size: .7em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+  
+.fificont .fifi-back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+  
+.fificont .fifi-front{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+  
+.fificont:hover .fifi-back{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+  
+.fificont:hover .fifi-front{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+  
+.fifi-item .fifi-inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+  
+@media screen and (max-width: 64rem){
+    .col{
+      width: calc(33.333333% - 2rem);
+    }
+}
+  
+@media screen and (max-width: 48rem){
+    .col{
+      width: calc(50% - 2rem);
+    }
+}
+  
+@media screen and (max-width: 32rem){
+    .col{
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    width: 1519px;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+}
+
+.lis{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 40px;
+    color: aliceblue;
+}
+.lis a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+.lis .style{
+    color: orangered;
+}
+.lis>a:hover{
+    font-size: 20px;
+    /* color: aqua; */
+    /* 炫彩字体 */
+    background: -webkit-linear-gradient(20deg, #f95f05, #f2fa08ef, #acf2fd, #2cb0f2);
+    color: transparent;
+    /*设置字体颜色透明*/
+    -webkit-background-clip: text;
+}

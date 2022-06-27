@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../webcss/footer.css">
+    <title>公共footer部分</title>
+</head>
+<body>
+    <!-- 底部 -->
+    <footer>
+        <!-- 基本信息部分 -->
+        <div class="footerUp">
+            <div class="upItem">
+                <strong><a href="#">网站地图</a></strong>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">企业官网建设</a></li>
+                    <li><a href="#">微信小程序</a></li>
+                    <li><a href="#">APP软件开发</a></li>
+                    <li><a href="#">后台大屏开发</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="upItem">
+                <strong><a href="#">联系方式</a></strong>
+                <ul>
+                    <li>联系电话：18615212686</li>
+                    <li>凌途邮箱：lingtucm@163.com</li>
+                    <li>联系地址：山东省济南市高新区三清财富中心C座1106室</li>
+                </ul>
+            </div>
+            <div class="upItem">
+                <strong><a id="method" href="#">联系方式</a></strong>
+                <div class="pt">
+                    <div class="pt-img"><img src="../webimg/116.png" alt=""></div>
+                    <h3>扫码有惊喜！</h3>
+                </div>
+            </div>
+        </div>
+        <!-- 版权部分 -->
+        <div class="footerBut">
+            @2022-济南凌途传媒有限公司版权所有
+        </div>
+    </footer>
+    
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="jquery.rotate.js"></script>
+    <script>
+        // 显示隐藏内容
+        $("#method").on({
+            mouseover:function(){
+                ((($(".pt-img").parent()).children()).eq(1)).css({display:'block'})
+            },
+            mouseout:function(){
+                ((($(".pt-img").parent()).children()).eq(1)).css("display","none")
+            }
+        })
+
+    </script>
+</body>
+</html>
